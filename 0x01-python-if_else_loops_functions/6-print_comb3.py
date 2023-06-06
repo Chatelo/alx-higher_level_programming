@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-for i in range(0, 10):
-    for j in range(i + 1, 10):
-        if i != j:
-            if i != 8 or j != 9:
-                print("{i:d}{j:d}, ", end="")
+for a in range(0, 10):
+    for b in range(a + 1, 10):
+        if a != b:
+            if a != 8 or b != 9:
+                print("{:d}{:d}, ".format(a, b), end="")
             else:
-                print("{i:d}{j:d}")
+                print("{:d}{:d}".format(a, b))
