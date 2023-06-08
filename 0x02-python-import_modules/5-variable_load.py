@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-5-variable_load.py - prints the value of the variable a from variable_load_5.py
+5-variable_load.py - print value of the variable a from variable_load_5.py
 """
 
 if __name__ == "__main__":
