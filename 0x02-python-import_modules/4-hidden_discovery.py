@@ -1,6 +1,6 @@
 #!/usr/bin/python3.8
 """
-This module will print all the names defined by the compiled module 'hidden_4.pyc'
+This module prints all the names defined by the compiled module hidden_4.pyc
 """
 
 if __name__ == "__main__":
