@@ -6,4 +6,3 @@ def raise_exception():
         1 + "one"
     except TypeError:
         raise
-
