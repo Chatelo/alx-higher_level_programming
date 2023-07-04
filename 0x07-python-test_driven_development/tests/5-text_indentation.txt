@@ -1,0 +1,70 @@
+Doctest for 5-text_indentation.py
+
+>>> text_indentation("")
+Traceback (most recent call last):
+...
+ValueError: text can't be empty
+
+>>> text_indentation(12)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation("Lorem ipsum dolor. Sit amet? Consectetur adipiscing elit: Aenean tristique enim ut nibh aliquam, non blandit lectus pellentesque. In volutpat, ante eget feugiat consequat, turpis metus tristique risus, quis euismod urna lorem eget ipsum. Etiam interdum pellentesque eleifend. Curabitur congue diam id elit pharetra, vel luctus nisi malesuada. Integer ullamcorper, elit eu vestibulum vestibulum, dolor libero pulvinar mi, id convallis risus neque non purus. ")
+Lorem ipsum dolor$
+$
+Sit amet?$
+$
+Consectetur adipiscing elit:$
+$
+Aenean tristique enim ut nibh aliquam, non blandit lectus pellentesque.$
+$
+In volutpat, ante eget feugiat consequat, turpis metus tristique risus, quis euismod urna lorem eget ipsum.$
+$
+Etiam interdum pellentesque eleifend.$
+$
+Curabitur congue diam id elit pharetra, vel luctus nisi malesuada.$
+$
+Integer ullamcorper, elit eu vestibulum vestibulum, dolor libero pulvinar mi, id convallis risus neque non purus.$
+
+>>> text_indentation("Lorem ipsum dolor. Sit amet? Consectetur adipiscing elit: Aenean tristique enim ut nibh aliquam, non blandit lectus pellentesque.")
+Lorem ipsum dolor$
+$
+Sit amet?$
+$
+Consectetur adipiscing elit:$
+$
+Aenean tristique enim ut nibh aliquam, non blandit lectus pellentesque.$
+
+>>> text_indentation("Lorem ipsum dolor.")
+Lorem ipsum dolor.$
+
+>>> text_indentation("Lorem ipsum dolor?")
+Lorem ipsum dolor?$
+$
+>>> text_indentation("Lorem ipsum dolor:")
+Lorem ipsum dolor:$
+
+>>> text_indentation("Lorem ipsum dolor? Sit amet: consectetur adipiscing elit.")
+Lorem ipsum dolor?$
+$
+Sit amet:$
+$
+consectetur adipiscing elit.$
+
+>>> text_indentation("     Lorem ipsum dolor.     Sit amet?     Consectetur adipiscing elit:      Aenean tristique enim ut nibh aliquam, non blandit lectus pellentesque. In volutpat, ante eget feugiat consequat, turpis metus tristique risus, quis euismod urna lorem eget ipsum. Etiam interdum pellentesque eleifend. Curabitur congue diam id elit pharetra, vel luctus nisi malesuada. Integer ullamcorper, elit eu vestibulum vestibulum, dolor libero pulvinar mi, id convallis risus neque non purus.      ")
+Lorem ipsum dolor$
+$
+Sit amet?$
+$
+Consectetur adipiscing elit:$
+$
+Aenean tristique enim ut nibh aliquam, non blandit lectus pellentesque.$
+$
+In volutpat, ante eget feugiat consequat, turpis metus tristique risus, quis euismod urna lorem eget ipsum.$
+$
+Etiam interdum pellentesque eleifend.$
+$
+Curabitur congue diam id elit pharetra, vel luctus nisi malesuada.$
+$
+Integer ullamcorper, elit eu vestibulum vestibulum, dolor libero pulvinar mi, id
