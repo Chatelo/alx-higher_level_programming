@@ -1,5 +1,5 @@
-#!/usr/bin/node
+// math.js (Your module file)
 
-export function add(a, b) {
+exports.add = function (a, b) {
 	return a + b;
-}
+};
