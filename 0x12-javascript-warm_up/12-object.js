@@ -1,10 +1,12 @@
 #!/usr/bin/node
 
-function callMeMoby(x, theFunction) {
-	if (x > 0) {
-		theFunction();
-		callMeMoby(x - 1, theFunction);
-	}
-}
+const myObject = {
+	type: 'object',
+	value: 12,
+};
 
-module.exports.callMeMoby = callMeMoby;
+console.log(myObject);
+
+myObject.value = 89;
+
+console.log(myObject);
