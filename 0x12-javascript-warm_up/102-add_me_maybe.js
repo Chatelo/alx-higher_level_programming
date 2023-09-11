@@ -5,5 +5,4 @@ function addMeMaybe(number, theFunction) {
 	theFunction(number);
 }
 
-const _addMeMaybe = addMeMaybe;
-export { _addMeMaybe as addMeMaybe };
+module.exports.addMeMaybe = addMeMaybe;
