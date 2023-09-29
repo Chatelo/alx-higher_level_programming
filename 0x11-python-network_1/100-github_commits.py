@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 Retrieves the 10 most recent commits from a repository by a given user.
 The first argument is the repository name.
