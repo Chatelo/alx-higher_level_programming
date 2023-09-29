@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Sends a POST request to a URL with an email as a parameter and displays...
- the response body.
+Sends a POST request to a URL with an email as a parameter and displays
 """
 
 import sys
@@ -9,7 +8,7 @@ import urllib.parse
 import urllib.request
 
 if __name__ == "__main__":
-    """Send a POST request to the URL with the email as a parameter...
+    """Sends a POST request to the URL with the email as a parameter...
       and display the response body."""
     url = sys.argv[1]
     email = sys.argv[2]
