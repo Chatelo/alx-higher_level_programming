@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Fetch https://alx-intranet.hbtn.io/status and displays the body of the response
+Fetches https://alx-intranet.hbtn.io/status and displays the ...
+body of the response.
 """
 
 import requests
@@ -12,5 +13,5 @@ if __name__ == "__main__":
     content = response.text
 
     print("Body response:")
-    print(f"\t- type: {content}")
-    print(f"\t- content: {content}")
+    print("\t- type: {}".format(type(content)))
+    print("\t- content: {}".format(content))
