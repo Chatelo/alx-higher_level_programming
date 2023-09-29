@@ -2,8 +2,10 @@
 """
 Sends a POST request to http://0.0.0.0:5000/search_user with...
  a letter as a parameter.The letter must be sent in the variable q.
-If no argument is given, set q="".If the response body is properly JSON formatted and not empty,
-it displays the id and name like this: [<id>] <name>. Otherwise, it displays appropriate error messages.
+If no argument is given, set q="".If the response body is...
+ properly JSON formatted and not empty,
+it displays the id and name like this: [<id>] <name>.
+Otherwise, it displays appropriate error messages.
 """
 import sys
 import requests

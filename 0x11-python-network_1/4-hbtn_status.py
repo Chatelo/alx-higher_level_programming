@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Fetche https://alx-intranet.hbtn.io/status and displays the body of the response.
+Fetch https://alx-intranet.hbtn.io/status and displays the body of the response
 """
 
 import requests

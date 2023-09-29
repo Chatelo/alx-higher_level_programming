@@ -3,7 +3,7 @@
 """
 Retrieves the 10 most recent commits from a repository by a given user.
 The first argument is the repository name.
-The second argument is the owner name. Uses the GitHub API to fetch the commits.
+The second argument is the owner name. Uses the GitHub API to fetch the commits
 Prints the commits in the format "<sha>: <author name>" (one per line).
 """
 import sys
